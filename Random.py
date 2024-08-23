@@ -1,18 +1,21 @@
-import random
+from numpy import random,linalg
 
-# Number of random integers to print
-num_integers = 5
+a = random.randint(10,size=(2,2))
 
-for _ in range(num_integers):
-    # Generate a random integer between 1 and 100 (inclusive)
-    random_integer = random.randint(1, 100)
-    print(random_integer)
+print("DETERMINANT OF THE MATRIX IS\n",linalg.det(a))
+print("INVERSE OF THE MATRIX IS\n",linalg.inv(a))
+print("RANK OF THE MATRIX IS\n",linalg.matrix_rank(a))
+print("1D MATRIX IS\n",a.flatten())
+
 
 
 output
-
-71
-32
-51
-57
-40
+DETERMINANT OF THE MATRIX IS
+ 5.000000000000001
+INVERSE OF THE MATRIX IS
+ [[ 0.2  0. ]
+ [-1.8  1. ]]
+RANK OF THE MATRIX IS
+ 2
+1D MATRIX IS
+ [5 0 9 1]
