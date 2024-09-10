@@ -9,3 +9,5 @@ plt.ylabel("Car Value")
 plt.title("Value Deprecation")
 plt.plot(year,car_value, ls = "-",color="red",marker="*",mfc="g",ms="10",mec="b")
 plt.show()
+
+
